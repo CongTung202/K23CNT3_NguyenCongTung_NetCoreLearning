@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36017.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nctLesson1", "nctLesson1\nctLesson1.csproj", "{F184350C-C10B-4FE8-841B-7FF0E60CF787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NctLession1Mvc", "NctLession1Mvc\NctLession1Mvc.csproj", "{F8E7AF52-0DAC-4E0B-8AE3-F81CF59EC88F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F184350C-C10B-4FE8-841B-7FF0E60CF787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F184350C-C10B-4FE8-841B-7FF0E60CF787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F184350C-C10B-4FE8-841B-7FF0E60CF787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F184350C-C10B-4FE8-841B-7FF0E60CF787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E7AF52-0DAC-4E0B-8AE3-F81CF59EC88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E7AF52-0DAC-4E0B-8AE3-F81CF59EC88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E7AF52-0DAC-4E0B-8AE3-F81CF59EC88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E7AF52-0DAC-4E0B-8AE3-F81CF59EC88F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C51212B-2852-4D35-8D3B-F6D203B401EA}
+	EndGlobalSection
+EndGlobal
