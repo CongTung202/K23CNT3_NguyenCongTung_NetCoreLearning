@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # K23CNT3 - Nguyễn Công Tùng - NetCore Learing
 
 ## Khóa học lập trình web với công nghệ NetCore (Asp.Net Core MVC - 8.x)
@@ -36,3 +37,6 @@
 # Lesson10
 
 # Lesson11
+=======
+K23CNT3_NguyenCongTung_NetCore
+>>>>>>> dffe5592db3d7b77f027df0b67d8160a617fc30b
