@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|solutionrelative:nctlesson2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\controllers\\nctgetproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|solutionrelative:nctlesson2\\controllers\\nctgetproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\models\\nctproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|solutionrelative:nctlesson2\\models\\nctproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\controllers\\nctgetproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|solutionrelative:nctlesson2\\controllers\\nctgetproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|solutionrelative:nctlesson2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45C3443D-31BF-4AF4-8895-9A58C686FF42}|nctLesson2\\nctLesson2.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson2\\nctlesson2\\controllers\\ncthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -59,8 +59,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-28T04:15:20.414Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -85,12 +84,11 @@
               "RelativeToolTip": "nctLesson2\\Views\\nctGetProducts\\nctIndex.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T03:10:00.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T03:10:00.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "nctGetProductsController.cs",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson2\\nctLesson2\\Controllers\\nctGetProductsController.cs",
               "RelativeDocumentMoniker": "nctLesson2\\Controllers\\nctGetProductsController.cs",
@@ -111,8 +109,7 @@
               "RelativeToolTip": "nctLesson2\\Views\\nctHome\\nctHome.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T02:55:36.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T02:55:36.815Z"
             },
             {
               "$type": "Document",
@@ -124,8 +121,7 @@
               "RelativeToolTip": "nctLesson2\\Views\\nctHome\\nctPrivacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T02:46:47.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T02:46:47.688Z"
             },
             {
               "$type": "Document",
@@ -137,8 +133,7 @@
               "RelativeToolTip": "nctLesson2\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T02:16:36.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T02:16:36.417Z"
             },
             {
               "$type": "Document",
@@ -150,18 +145,17 @@
               "RelativeToolTip": "nctLesson2\\Controllers\\nctHomeController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T02:15:29.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T02:15:29.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson2\\nctLesson2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "nctLesson2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson2\\nctLesson2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "nctLesson2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAABrAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-28T02:14:10.443Z",
               "EditorCaption": ""
