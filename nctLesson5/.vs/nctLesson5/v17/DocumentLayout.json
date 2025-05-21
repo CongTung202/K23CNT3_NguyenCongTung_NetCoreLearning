@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson5\\nctlesson5\\controllers\\ncthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|solutionrelative:nctlesson5\\controllers\\ncthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson5\\nctlesson5\\views\\ncthome\\nctabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|solutionrelative:nctlesson5\\views\\ncthome\\nctabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|solutionrelative:nctlesson5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson5\\nctlesson5\\controllers\\ncthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|solutionrelative:nctlesson5\\controllers\\ncthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|b:\\k23cnt3_nguyencongtung_netcorelearning\\nctlesson5\\nctlesson5\\views\\shared\\_nctheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CB6327AD-7F92-43D1-AF8B-E42BCE3B313A}|nctLesson5\\nctLesson5.csproj|solutionrelative:nctlesson5\\views\\shared\\_nctheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "nctIndex.cshtml",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Views\\nctHome\\nctIndex.cshtml",
               "RelativeDocumentMoniker": "nctLesson5\\Views\\nctHome\\nctIndex.cshtml",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "nctIndex.cshtml",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Views\\nctMember\\nctIndex.cshtml",
               "RelativeDocumentMoniker": "nctLesson5\\Views\\nctMember\\nctIndex.cshtml",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "nctMemberController.cs",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Controllers\\nctMemberController.cs",
               "RelativeDocumentMoniker": "nctLesson5\\Controllers\\nctMemberController.cs",
@@ -90,20 +90,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "nctAbout.cshtml",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Views\\nctHome\\nctAbout.cshtml",
               "RelativeDocumentMoniker": "nctLesson5\\Views\\nctHome\\nctAbout.cshtml",
               "ToolTip": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Views\\nctHome\\nctAbout.cshtml",
               "RelativeToolTip": "nctLesson5\\Views\\nctHome\\nctAbout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-21T01:39:53.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "nctMember.cs",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Models\\nctMember.cs",
               "RelativeDocumentMoniker": "nctLesson5\\Models\\nctMember.cs",
@@ -115,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Program.cs",
               "RelativeDocumentMoniker": "nctLesson5\\Program.cs",
@@ -127,15 +127,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "nctHomeController.cs",
               "DocumentMoniker": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Controllers\\nctHomeController.cs",
               "RelativeDocumentMoniker": "nctLesson5\\Controllers\\nctHomeController.cs",
               "ToolTip": "B:\\K23CNT3_NguyenCongTung_NetCoreLearning\\nctLesson5\\nctLesson5\\Controllers\\nctHomeController.cs",
               "RelativeToolTip": "nctLesson5\\Controllers\\nctHomeController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T01:29:58.83Z"
+              "WhenOpened": "2025-05-21T01:29:58.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

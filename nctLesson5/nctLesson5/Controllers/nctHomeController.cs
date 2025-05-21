@@ -21,7 +21,7 @@ namespace nctLesson5.Controllers
         public IActionResult nctAbout()
         {
             nctMember nctMember = new nctMember();
-            nctMember.id = Guid.NewGuid().ToString("N");
+            nctMember.id = "2310900051";
             nctMember.nctName = "Nguyen Cong Tung";
             nctMember.nctPassword = "BokaChan123@";
             nctMember.nctEmail = "nct30000@gmail.com";
