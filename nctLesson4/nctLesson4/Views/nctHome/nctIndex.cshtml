@@ -1,8 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Trang Chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<div class="parent">
+    <div class="div2">
+        <iframe width="480" height="275" src="https://www.youtube.com/embed/2OCh9NIMVuQ" title="Bình Thành Siêu Đại Chiến - Phim Siêu Nhân Hay Nhất Mọi Thời Đại - Siêu Nhân 4K Thuyết Minh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="div3">
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" asp-area="" asp-controller="nctListFriends" asp-action="nctListFriends">Danh Sách Bạn</a>
+            <a class="list-group-item list-group-item-action" asp-area="" asp-controller="nctListFriends" asp-action="nctListFriendsBox">Profile Bạn Bè</a>
+            <a class="list-group-item list-group-item-action" asp-area="" asp-controller="nctHome" asp-action="nctAbout">Về Chúng Tôi</a>
+            <a class="list-group-item list-group-item-action" asp-area="" asp-controller="nctHome" asp-action="nctPrivacy">Điều Khoản</a>
+        </div>
+    </div>
+    <div class="div4 bg-danger">4</div>
 </div>
+

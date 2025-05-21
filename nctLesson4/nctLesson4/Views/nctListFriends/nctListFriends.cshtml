@@ -14,7 +14,7 @@
                 <th>Age</th>
                 <th>Address</th>
                 <th>Image</th>
-                <th>Favorite Food</th>
+                <th>Email</th>
             </tr>
         </thead>
         <tbody>
@@ -30,10 +30,12 @@
                         <img src="@friend.Image" alt="@friend.Name" style="max-width:100px;" />
                     }
                 </td>
-                <td>@friend.FavoriteFood</td>
-                <td>
+                <td>@friend.Email</td>
+                    <td>
+                    <a asp-action="nctDetailsFriends" asp-route-id="@friend.ID" class="btn btn-info btn-sm">Xem</a>
                     <a asp-action="nctEditFriends" asp-route-id="@friend.ID" class="btn btn-success btn-sm">Sửa</a>
                     <a asp-action="nctDeleteFriends" asp-route-id="@friend.ID" class="btn btn-danger btn-sm">Xóa</a>
+                        
                 </td>
 
             </tr>

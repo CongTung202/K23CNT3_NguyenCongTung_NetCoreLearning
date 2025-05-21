@@ -1,0 +1,27 @@
+﻿@model nctLesson4.Models.nctListFriends
+
+@{
+    ViewData["Title"] = "Chi tiết bạn bè";
+}
+<div class="profile-card">
+    @if (!string.IsNullOrEmpty(Model.Image))
+    {
+        <img src="@Model.Image" alt="@Model.Name" class="profile-img" />
+    }
+    <div class="profile-name">@Model.Name</div>
+    <div class="profile-school text-info fw-bold">@Model.Age</div>
+    <div class="profile-role">@Model.Email</div>
+    <div class="profile-school">@Model.Address</div>
+    <div class="profile-social">
+        <a href="https://www.youtube.com/" title="Youtube"><i class="fa fa-youtube"></i></a>
+        <a href="https://github.com/CongTung202/K23CNT3_NguyenCongTung_NetCoreLearning.git" title="Github"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+    </div>
+    <a href="#" class="contact-btn">Contact</a>
+</div>
+
+<a asp-action="nctListFriends" class="btn btn-secondary mt-3" style="display:block;max-width:320px;margin:20px auto 0 auto;">Quay lại danh sách</a>
+
+<!-- Font Awesome CDN for icons (add to _Layout.cshtml for global use if needed) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+

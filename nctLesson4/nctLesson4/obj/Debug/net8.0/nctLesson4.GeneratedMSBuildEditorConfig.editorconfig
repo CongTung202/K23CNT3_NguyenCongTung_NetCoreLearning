@@ -48,12 +48,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmN0TGlzdEZyaWVuZHNcbmN0RGVsZXRlRnJpZW5kcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[B:/K23CNT3_NguyenCongTung_NetCoreLearning/nctLesson4/nctLesson4/Views/nctListFriends/nctDetailsFriends.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmN0TGlzdEZyaWVuZHNcbmN0RGV0YWlsc0ZyaWVuZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [B:/K23CNT3_NguyenCongTung_NetCoreLearning/nctLesson4/nctLesson4/Views/nctListFriends/nctEditFriends.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmN0TGlzdEZyaWVuZHNcbmN0RWRpdEZyaWVuZHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [B:/K23CNT3_NguyenCongTung_NetCoreLearning/nctLesson4/nctLesson4/Views/nctListFriends/nctListFriends.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmN0TGlzdEZyaWVuZHNcbmN0TGlzdEZyaWVuZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[B:/K23CNT3_NguyenCongTung_NetCoreLearning/nctLesson4/nctLesson4/Views/nctListFriends/nctListFriendsBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbmN0TGlzdEZyaWVuZHNcbmN0TGlzdEZyaWVuZHNCb3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [B:/K23CNT3_NguyenCongTung_NetCoreLearning/nctLesson4/nctLesson4/Views/Shared/Error.cshtml]

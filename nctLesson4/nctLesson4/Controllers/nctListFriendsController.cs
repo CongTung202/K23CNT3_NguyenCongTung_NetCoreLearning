@@ -16,7 +16,7 @@ namespace nctLesson4.Controllers
                 Name = "Lê Quang Liêm",
                 Address = "Ocean Park",
                 Image = "/images/bokachan.jpg",
-                FavoriteFood = "Bánh Chưng"
+                Email = "bokachan@gmail.com"
             },
             new nctListFriends
             {
@@ -25,7 +25,7 @@ namespace nctLesson4.Controllers
                 Name = "Nguyễn Trần Hutao",
                 Address = "Hà Nội",
                 Image = "/images/hutao.jpg",
-                FavoriteFood = "Cháo Sen"
+                Email = "hutao@gmail.com"
             },
             new nctListFriends
             {
@@ -34,7 +34,7 @@ namespace nctLesson4.Controllers
                 Name = "Bô Thị Mai CChi",
                 Address = "Đà Nẵng",
                 Image = "/images/bocchi.jpg",
-                FavoriteFood = "Takoyaki"
+                Email = "bocchi@gmail.com"
             },
             new nctListFriends
             {
@@ -43,7 +43,7 @@ namespace nctLesson4.Controllers
                 Name = "Lê Thị Ma Ki",
                 Address = "Bắc Bling",
                 Image = "/images/Makima.jpg",
-                FavoriteFood = "Strawbery Favor"
+                Email = "Makima@gmail.com"
             },
             new nctListFriends
             {
@@ -52,7 +52,7 @@ namespace nctLesson4.Controllers
                 Name = "Nguyễn Ngọc Reze",
                 Address = "Hưng Yên",
                 Image = "/images/Reze.jpg",
-                FavoriteFood = "Choco Mint"
+                Email = "Rezebombgirl@gmail.com"
             },
             new nctListFriends
             {
@@ -61,7 +61,7 @@ namespace nctLesson4.Controllers
                 Name = "Trần Thị Asa",
                 Address = "Nghệ An",
                 Image = "/images/Asa.jpg",
-                FavoriteFood = "Ice Scream"
+                Email = "AsaTheWar@gmail.com"
             }
         };
 
@@ -70,13 +70,18 @@ namespace nctLesson4.Controllers
             ViewBag.Friends = friends;
             return View();
         }
-
+        public IActionResult nctListFriendsBox()
+        {
+            ViewBag.Friends = friends;
+            return View();
+        }
         [HttpGet]
         public IActionResult nctCreateFriends()
         {
             nctListFriends nctListFriends = new nctListFriends();
             return View(nctListFriends);
         }
+
 
         [HttpPost]
         public IActionResult nctCreateSubmitFriends(nctListFriends friend)
@@ -87,6 +92,13 @@ namespace nctLesson4.Controllers
             return RedirectToAction("nctListFriends");
         }
 
+        public IActionResult nctDetailsFriends(int id)
+        {
+            var friend = friends.Find(f => f.ID == id);
+            if (friend == null)
+                return NotFound();
+            return View(friend);
+        }
         [HttpGet]
         public IActionResult nctEditFriends(int id)
         {
@@ -106,7 +118,7 @@ namespace nctLesson4.Controllers
                 friend.Age = updatedFriend.Age;
                 friend.Address = updatedFriend.Address;
                 friend.Image = updatedFriend.Image;
-                friend.FavoriteFood = updatedFriend.FavoriteFood;
+                friend.Email = updatedFriend.Email;
             }
             return RedirectToAction("nctListFriends");
         }
