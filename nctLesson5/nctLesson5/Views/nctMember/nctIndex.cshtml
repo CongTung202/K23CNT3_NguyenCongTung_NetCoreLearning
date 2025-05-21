@@ -1,0 +1,29 @@
+﻿@model List<nctLesson5.Models.nctMember>
+
+@{
+    ViewData["Title"] = "Member List";
+}
+
+<h2>Member List</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr class="alert alert-info">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var member in Model)
+    {
+        <tr>
+            <td>@member.id</td>
+            <td>@member.nctName</td>
+            <td>@member.nctPassword</td>
+            <td>@member.nctEmail</td>
+        </tr>
+    }
+    </tbody>
+</table>
