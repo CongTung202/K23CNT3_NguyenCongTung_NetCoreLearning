@@ -1,0 +1,23 @@
+﻿@model nctLesson7.Models.nctEmployee
+
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<h2>Delete Employee</h2>
+<h4>Bạn có chắc chắn muốn xóa nhân viên: @Model.nctName?</h4>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.nctId</dd>
+        <dt class="col-sm-2">Name</dt>
+        <dd class="col-sm-10">@Model.nctName</dd>
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.nctEmail</dd>
+    </dl>
+    <form asp-action="nctDelete" method="post">
+        <input type="hidden" asp-for="nctId" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="nctIndex" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

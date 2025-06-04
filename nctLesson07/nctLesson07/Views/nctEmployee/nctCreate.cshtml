@@ -1,0 +1,55 @@
+﻿@model nctLesson7.Models.nctEmployee
+
+@{
+    ViewData["Title"] = "nctCreate";
+}
+
+<h1>nctCreate</h1>
+
+<h4>nctEmployee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="nctCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nctName" class="control-label"></label>
+                <input asp-for="nctName" class="form-control" />
+                <span asp-validation-for="nctName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctBirthDay" class="control-label"></label>
+                <input asp-for="nctBirthDay" class="form-control" />
+                <span asp-validation-for="nctBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctEmail" class="control-label"></label>
+                <input asp-for="nctEmail" class="form-control" />
+                <span asp-validation-for="nctEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctPhone" class="control-label"></label>
+                <input asp-for="nctPhone" class="form-control" />
+                <span asp-validation-for="nctPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctSalary" class="control-label"></label>
+                <input asp-for="nctSalary" class="form-control" />
+                <span asp-validation-for="nctSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="nctStatus" /> @Html.DisplayNameFor(model => model.nctStatus)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="nctIndex">Back to List</a>
+</div>
+
