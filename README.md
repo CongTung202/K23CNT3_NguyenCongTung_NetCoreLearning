@@ -18,25 +18,25 @@
 ## ========================================================
 
 # Lesson02
-##Tổng Hợp Lab02 + Lab03
+## Tổng Hợp Lab02 + Lab03
 
 # Lesson03
-##Tổng Hợp Lab02 + Lab03
+## Tổng Hợp Lab02 + Lab03
 
 # Lesson04
-##Review +  1 mục điểm thường xuyên
+## Review +  1 mục điểm thường xuyên
 
 # Lesson05
-##Model - Điểm thường xuyên 1 
+## Model - Điểm thường xuyên 1 
 
 # Lesson06
 ## Thực hành tổng hợp (Router/ Controller / View / Model)
 
 # Lesson07
-##Điểm TX-Các Chức Năng CRUD
+## Điểm TX-Các Chức Năng CRUD
 
 # Lesson08
-##Data Validate and Annotation
+## Data Validate and Annotation
 
 # Lesson09
 
