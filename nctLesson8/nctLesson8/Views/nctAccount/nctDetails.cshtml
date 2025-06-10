@@ -1,0 +1,48 @@
+﻿@model nctLesson8.Models.nctAccounts
+
+@{
+    ViewData["Title"] = "Chi tiết tài khoản";
+}
+
+<h1 class="text-center my-4">Thông tin tài khoản</h1>
+
+<div class="container">
+    <div class="card shadow-lg p-4">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="@Model.nctAvatar" alt="Avatar" class="img-thumbnail" style="width: 150px; height: 150px;">
+            </div>
+            <div class="col-md-8">
+                <dl class="row">
+                    <dt class="col-sm-4 text-secondary">Mã tài khoản</dt>
+                    <dd class="col-sm-8 fw-bold">@Html.DisplayFor(model => model.nctId)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Họ và tên</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.nctFullName)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Email</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.nctEmail)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Số điện thoại</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.nctPhone)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Địa chỉ</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.nctAddress)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Ngày sinh</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.nctBirthday)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Facebook</dt>
+                    <dd class="col-sm-8">
+                        <a href="@Model.nctFacebook" target="_blank" class="text-primary">@Html.DisplayFor(model => model.nctFacebook)</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a class="btn btn-warning" asp-action="nctEdit" asp-route-id="@Model.nctId">Chỉnh sửa</a>
+        <a class="btn btn-secondary" asp-action="nctIndex">Quay lại danh sách</a>
+    </div>
+</div>

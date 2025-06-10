@@ -1,0 +1,42 @@
+﻿@model nctLesson8.Models.nctAccounts
+
+@{
+    ViewData["Title"] = "Xác nhận xóa tài khoản";
+}
+
+<div class="container">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center text-danger">@ViewData["Title"]</h2>
+        <h4 class="text-center text-secondary">Bạn có chắc chắn muốn xóa tài khoản này?</h4>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="@Model.nctAvatar" alt="Avatar" class="img-thumbnail" style="width: 150px; height: 150px;">
+            </div>
+            <div class="col-md-8">
+                <dl class="row">
+                    <dt class="col-sm-4 text-secondary">Mã tài khoản</dt>
+                    <dd class="col-sm-8 fw-bold">@Model.nctId</dd>
+
+                    <dt class="col-sm-4 text-secondary">Họ và tên</dt>
+                    <dd class="col-sm-8">@Model.nctFullName</dd>
+
+                    <dt class="col-sm-4 text-secondary">Email</dt>
+                    <dd class="col-sm-8">@Model.nctEmail</dd>
+
+                    <dt class="col-sm-4 text-secondary">Số điện thoại</dt>
+                    <dd class="col-sm-8">@Model.nctPhone</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <form asp-action="nctDelete" method="post">
+                <input type="hidden" name="id" value="@Model.nctId" />
+                <button type="submit" class="btn btn-danger">Xóa tài khoản</button>
+                <a asp-action="nctIndex" class="btn btn-secondary">Hủy</a>
+            </form>
+        </div>
+    </div>
+</div>

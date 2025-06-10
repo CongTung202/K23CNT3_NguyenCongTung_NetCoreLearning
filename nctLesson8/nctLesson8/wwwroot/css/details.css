@@ -1,0 +1,55 @@
+﻿/* Định dạng toàn bộ trang */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 20px;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Định dạng danh sách thông tin */
+dl.row {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+    font-weight: bold;
+    color: #495057;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Định dạng nút bấm */
+a, .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    a:hover, .btn:hover {
+        background-color: #218838;
+    }
+
+/* Định dạng ảnh đại diện */
+img.nctAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}

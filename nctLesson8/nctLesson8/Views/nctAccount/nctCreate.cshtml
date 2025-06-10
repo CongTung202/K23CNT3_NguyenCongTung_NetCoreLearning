@@ -1,0 +1,70 @@
+﻿@model nctLesson8.Models.nctAccounts
+
+@{
+    ViewData["Title"] = "nctCreate";
+}
+
+<h1>nctCreate</h1>
+
+<h4>nctAccounts</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="nctCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="nctId" class="control-label"></label>
+                <input asp-for="nctId" class="form-control" />
+                <span asp-validation-for="nctId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctFullName" class="control-label"></label>
+                <input asp-for="nctFullName" class="form-control" />
+                <span asp-validation-for="nctFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctEmail" class="control-label"></label>
+                <input asp-for="nctEmail" class="form-control" />
+                <span asp-validation-for="nctEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctPhone" class="control-label"></label>
+                <input asp-for="nctPhone" class="form-control" />
+                <span asp-validation-for="nctPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctAddress" class="control-label"></label>
+                <input asp-for="nctAddress" class="form-control" />
+                <span asp-validation-for="nctAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctAvatar" class="control-label"></label>
+                <input asp-for="nctAvatar" class="form-control" />
+                <span asp-validation-for="nctAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctBirthday" class="control-label"></label>
+                <input asp-for="nctBirthday" class="form-control" />
+                <span asp-validation-for="nctBirthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctPassword" class="control-label"></label>
+                <input asp-for="nctPassword" class="form-control" />
+                <span asp-validation-for="nctPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nctFacebook" class="control-label"></label>
+                <input asp-for="nctFacebook" class="form-control" />
+                <span asp-validation-for="nctFacebook" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="nctIndex">Back to List</a>
+</div>
+

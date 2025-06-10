@@ -1,0 +1,65 @@
+﻿@model nctLesson8.Models.nctAccounts
+
+@{
+    ViewData["Title"] = "Chỉnh sửa tài khoản";
+}
+
+<h1 class="text-center my-4">Chỉnh sửa tài khoản</h1>
+
+<h4 class="text-secondary">Thông tin tài khoản</h4>
+<hr />
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="nctEdit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="nctId" class="form-label fw-bold"></label>
+                    <input asp-for="nctId" class="form-control" readonly />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctFullName" class="form-label"></label>
+                    <input asp-for="nctFullName" class="form-control" placeholder="Nhập họ và tên..." />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctEmail" class="form-label"></label>
+                    <input asp-for="nctEmail" class="form-control" placeholder="Nhập email..." />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctPhone" class="form-label"></label>
+                    <input asp-for="nctPhone" class="form-control" placeholder="Nhập số điện thoại..." />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctAddress" class="form-label"></label>
+                    <input asp-for="nctAddress" class="form-control" placeholder="Nhập địa chỉ..." />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctAvatar" class="form-label"></label>
+                    <input asp-for="nctAvatar" class="form-control" placeholder="Nhập URL ảnh đại diện..." />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctBirthday" class="form-label"></label>
+                    <input asp-for="nctBirthday" class="form-control" type="date" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="nctFacebook" class="form-label"></label>
+                    <input asp-for="nctFacebook" class="form-control" placeholder="Nhập liên kết Facebook..." />
+                </div>
+
+                <div class="mb-3 text-center">
+                    <button type="submit" class="btn btn-success">Lưu thay đổi</button>
+                    <a asp-action="nctIndex" class="btn btn-secondary">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
