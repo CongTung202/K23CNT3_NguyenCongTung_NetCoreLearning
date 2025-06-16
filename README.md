@@ -39,7 +39,7 @@
 ### Data Validate and Annotation
 
 # Lesson09
-
+### Truy suất dữ liệu sử dụng Entity Framework Core
 # Lesson10
 
 # Lesson11
