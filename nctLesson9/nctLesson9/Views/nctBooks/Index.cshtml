@@ -1,0 +1,39 @@
+﻿@model IEnumerable<nctLesson9.Models.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1 class="mb-4">Books</h1>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-success">Add New Book</a>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var book in Model)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @if (!string.IsNullOrEmpty(book.Picture))
+                {
+                    <img src="~/@book.Picture" class="card-img-top" alt="@book.Title" style="object-fit:cover; height:220px;">
+                }
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@book.Title</h5>
+                    <p class="card-text text-muted mb-1">by @book.Author</p>
+                    <p class="card-text mb-2"><span class="badge bg-info text-dark">@book.Category?.CategoryName</span></p>
+                    <p class="card-text flex-grow-1">@book.Description?.Substring(0, Math.Min(80, book.Description.Length))...</p>
+                    <div class="mt-auto">
+                        <span class="fw-bold text-primary">Price: @book.Price?.ToString("C")</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0 d-flex justify-content-between">
+                    <a asp-action="Details" asp-route-id="@book.BookId" class="btn btn-sm btn-outline-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@book.BookId" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@book.BookId" class="btn btn-sm btn-outline-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

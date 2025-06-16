@@ -1,0 +1,23 @@
+﻿@model nctLesson9.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="mb-4">Category Details</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h4 class="card-title mb-3">Category</h4>
+                <dl class="row mb-4">
+                    <dt class="col-sm-4"> @Html.DisplayNameFor(model => model.CategoryName) </dt>
+                    <dd class="col-sm-8"> @Html.DisplayFor(model => model.CategoryName) </dd>
+                </dl>
+                <a asp-action="Edit" asp-route-id="@Model?.CategoryId" class="btn btn-primary">Edit</a>
+                <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

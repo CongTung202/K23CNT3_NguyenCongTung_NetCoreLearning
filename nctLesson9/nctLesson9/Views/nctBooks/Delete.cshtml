@@ -1,0 +1,27 @@
+﻿@model nctLesson9.Models.Book
+
+@{
+    ViewData["Title"] = "Delete Book";
+}
+
+<h2 class="mb-4 text-danger">Delete Book</h2>
+
+<div class="alert alert-warning">
+    Are you sure you want to delete this book?
+</div>
+
+<div class="card shadow-sm p-4 mb-3">
+    <h5>@Model.Title</h5>
+    <p class="mb-1"><strong>Author:</strong> @Model.Author</p>
+    <p class="mb-1"><strong>Category:</strong> @Model.Category?.CategoryName</p>
+    <p class="mb-1"><strong>Publisher:</strong> @Model.Publisher?.PublisherName</p>
+    <p class="mb-1"><strong>Price:</strong> @Model.Price?.ToString("C")</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="BookId" />
+    <div class="d-flex justify-content-between">
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </div>
+</form>
