@@ -1,0 +1,34 @@
+﻿@model nctLesson10.Models.NctPost
+
+@{
+    ViewData["Title"] = "Post Details";
+}
+
+<h1 class="mb-4">Post Details</h1>
+
+<div class="card mb-4" style="max-width: 600px;">
+    <div class="card-body">
+        <h4 class="card-title">@Model.NctTitle</h4>
+        @if (!string.IsNullOrEmpty(Model.NctImage))
+        {
+            <img src="@Model.NctImage" alt="Image" class="img-thumbnail mb-3" style="max-width: 200px;" />
+        }
+        <dl class="row">
+            <dt class="col-sm-4">Content</dt>
+            <dd class="col-sm-8">@Model.NctContent</dd>
+            <dt class="col-sm-4">Status</dt>
+            <dd class="col-sm-8">
+                @if (Model.NctStatus == true)
+                {
+                    <span class="badge bg-success">Active</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Inactive</span>
+                }
+            </dd>
+        </dl>
+        <a asp-action="Edit" asp-route-id="@Model.NctId" class="btn btn-primary me-2">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

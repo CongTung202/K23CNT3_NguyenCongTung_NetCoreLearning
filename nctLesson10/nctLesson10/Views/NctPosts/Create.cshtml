@@ -1,0 +1,52 @@
+﻿@model nctLesson10.Models.NctPost
+
+@{
+    ViewData["Title"] = "Create Post";
+}
+
+<h1 class="mb-4">Create Post</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+            <div class="mb-3">
+                <label asp-for="NctTitle" class="form-label"></label>
+                <input asp-for="NctTitle" class="form-control" />
+                <span asp-validation-for="NctTitle" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Image</label>
+                <input type="file" name="ImageFile" class="form-control" />
+                <span asp-validation-for="NctImage" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="NctContent" class="form-label"></label>
+                <input asp-for="NctContent" class="form-control" />
+                <span asp-validation-for="NctContent" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="NctStatus" class="form-label"></label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="NctStatus" value="true" id="statusActive" />
+                        <label class="form-check-label" for="statusActive">Active</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" asp-for="NctStatus" value="false" id="statusInactive" />
+                        <label class="form-check-label" for="statusInactive">Inactive</label>
+                    </div>
+                </div>
+                <span asp-validation-for="NctStatus" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-success">Create</button>
+            <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
