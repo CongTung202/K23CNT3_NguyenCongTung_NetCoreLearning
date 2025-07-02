@@ -41,8 +41,9 @@
 # Lesson09
 ### Truy suất dữ liệu sử dụng Entity Framework Core
 # Lesson10
-
+### Ôn tập EFC
 # Lesson11
+### Ôn Tập Lại Truy Xuất EFC và database
 =======
 K23CNT3_NguyenCongTung_NetCore
 >>>>>>> dffe5592db3d7b77f027df0b67d8160a617fc30b
