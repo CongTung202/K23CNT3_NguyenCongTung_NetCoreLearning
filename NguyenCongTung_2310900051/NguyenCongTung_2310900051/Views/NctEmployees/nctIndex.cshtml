@@ -1,0 +1,74 @@
+﻿@model IEnumerable<NguyenCongTung_2310900051.Models.NctEmployee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Employee List</h1>
+
+    <p>
+        <a asp-action="nctCreate" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Create New
+        </a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NctEmpName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NctEmpLevel)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NctEmpStartDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NctEmpStatus)
+                    </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NctEmpName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NctEmpLevel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NctEmpStartDate)
+                        </td>
+                        <td>
+                            @if (item.NctEmpStatus==true)
+                            {
+                                <span class="btn btn-success">Show</span>
+                            }
+                            else
+                            {
+                                <span class="btn btn-secondary">Hide</span>
+                            }
+                        </td>
+                        <td>
+                            <a asp-action="nctEdit" asp-route-id="@item.NctEmpId" class="btn btn-sm btn-warning">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a asp-action="nctDetails" asp-route-id="@item.NctEmpId" class="btn btn-sm btn-info">
+                                <i class="fas fa-info-circle"></i> Details
+                            </a>
+                            <a asp-action="nctDelete" asp-route-id="@item.NctEmpId" class="btn btn-sm btn-danger">
+                                <i class="fas fa-trash-alt"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

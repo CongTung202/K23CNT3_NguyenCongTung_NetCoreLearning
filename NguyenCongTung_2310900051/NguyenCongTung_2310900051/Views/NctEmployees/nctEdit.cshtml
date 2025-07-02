@@ -1,0 +1,60 @@
+﻿@model NguyenCongTung_2310900051.Models.NctEmployee
+
+@{
+    ViewData["Title"] = "Edit Employee";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark">
+                    <h3 class="mb-0">Edit Employee</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="nctEdit" autocomplete="off">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                        <input type="hidden" asp-for="NctEmpId" />
+                        <div class="mb-3">
+                            <label asp-for="NctEmpName" class="form-label"></label>
+                            <input asp-for="NctEmpName" class="form-control" />
+                            <span asp-validation-for="NctEmpName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="NctEmpLevel" class="form-label"></label>
+                            <input asp-for="NctEmpLevel" class="form-control" />
+                            <span asp-validation-for="NctEmpLevel" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="NctEmpStartDate" class="form-label"></label>
+                            <input asp-for="NctEmpStartDate" class="form-control" type="date" />
+                            <span asp-validation-for="NctEmpStartDate" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Status</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" asp-for="NctEmpStatus" value="true" id="statusActive" />
+                                <label class="form-check-label" for="statusActive">Show</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" asp-for="NctEmpStatus" value="false" id="statusInactive" />
+                                <label class="form-check-label" for="statusInactive">Hide</label>
+                            </div>
+                            <span asp-validation-for="NctEmpStatus" class="text-danger"></span>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-end">
+                    <a asp-action="nctIndex" class="btn btn-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
